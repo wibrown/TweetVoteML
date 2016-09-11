@@ -2,7 +2,7 @@
 <html>
   <head lang="en">
     <meta charset="UTF-8">
-    <title>Flask React</title>
+    <title>TweetVoteML</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
@@ -10,13 +10,37 @@
   </head>
   <body>
     <div class="container">
-      <h1>Flask React</h1>
+      <div class="row">
+        <span>
+          <img src="static/hill.jpg" class="img-circle" width="200" height="200">
+          <h1><span class="t1">Tweet</span><span class="t2">Vote</span><span class="t3">ML</span></h1>
+          <img src="static/trump.jpg" class="img-circle" width="200" height="200">
+        </span>
+      </div>
+      <button onClick="alert ()"></button>
+      <form action="." method="POST">
+        <input type="text" name="text">
+        <input type="submit" name="my-form" value="Send">
+      </form>
+      <form action="." method="POST">
+        <input type="submit" name="my-form" value="Reset">
+      </form>
+
       <br>
-      <div id="main"></div>
+      
+      <div><h4>{{ratio}}% of your Tweets indicate you support {{name}}</h4></div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="{{ratio}}"
+        aria-valuemin="0" aria-valuemax="100" style="width:{{ratio}}%">
+          <span class="sr-only">70% Complete</span>
+        </div>
+      </div>
+      
     </div>
     <!-- scripts -->
     <script src="{{ url_for('static', filename='bower_components/react/react.min.js') }}"></script>
     <script src="{{ url_for('static', filename='bower_components/react/react-dom.min.js') }}"></script>
     <script src="{{ url_for('static', filename='scripts/js/main.js') }}"></script>
+
   </body>
 </html>

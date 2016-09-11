@@ -1,11 +1,25 @@
 /* custom styles */
 
 .container {
+  background-color: #99EEFF;
   text-align: center;
   padding-top: 50px;
   max-width: 300px;
 }
 
+.t1 {
+  color: #AA0000;
+}
+.t2 {
+  color: #0000AA;
+}
+.t3 {
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #99EEFF
+}
 
 input {
   text-align: center;

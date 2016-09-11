@@ -27,7 +27,7 @@ var DynamicSearch = React.createClass({displayName: "DynamicSearch",
 
     return (
       React.createElement("div", null,
-        React.createElement("input", {type: "text", value: this.state.searchString, onChange: this.handleChange, placeholder: "Search!"}),
+        React.createElement("input", {type: "text", value: this.state.searchString, onChange: this.handleChange, placeholder: "Twitter username:"}),
         React.createElement("ul", null,
            countries.map(function(country){ return React.createElement("li", null, country.name, " ") })
         )
