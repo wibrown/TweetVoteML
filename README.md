@@ -1,4 +1,4 @@
-Be sure to check out the blog posts-
+TweetVoteML - Predicting who you'll vote for this election using Machine Learning and your Twitter data.
 
-1. https://realpython.com/blog/python/the-ultimate-flask-front-end/
-1. https://realpython.com/blog/python/the-ultimate-flask-front-end-part-2/
+Application is live at http://tweetvote.ml
+Backend code is viewable at https://github.com/robzajac/TweetVoteML-Backend
