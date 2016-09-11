@@ -4,6 +4,8 @@
 
 env
 venv
+keys.py
+keys.pyc
 
 node_modules/
 npm-debug.log

@@ -12,7 +12,13 @@ def index():
 def index_post():
 	text = request.form['text']
 	user_dict = pcu.process_username(text)
-	return render_template('index.html', name=user_dict['name'], ratio=user_dict['ratio'])
+	# user_dict = {'name': 'Rob Zajac', 'ratio': '420'}
+	candidate=str(user_dict['orientation'])
+	if candidate == '0':
+		candidate = "Hillary Clinton"
+	else:
+		candidate = "Donald Trump"
+	return render_template('index.html', name=user_dict['name'], vote=candidate, ratio=str(100 * user_dict['ratio']))
 
 # @app.route('/', methods=['POST'])
 # def index_post_reset():
